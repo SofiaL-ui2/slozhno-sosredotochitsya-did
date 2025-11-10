@@ -1,40 +1,43 @@
-.page.theme_light {
-	--background-color: var(--color-pink-seventh, #fff1f7);
-	--background-image: url('../images/cover-image-light.png');
-	--title-color: var(--color-pink-sixth, #ffc2e6);
-	--header-text-color: var(--color-grey, #353430);
-	--decorated-color: var(--color-grey, #353430);
-	--decorated-color-40: var(--color-grey-40, #35343040);
-	--section-title-color: var(--color-grey, #353430);
-	--article-title-color: var(--color-grey, #353430);
-	--accent-color: var(--color-pink-fifth, #ff8dcb);
-	--text-color: var(--color-grey, #f1b2ce);
-	--hover-color: var(--color-pink-fourth, #353430);
-	--focus-color: var(--color-pink-fourth, #353430);
+
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+:root.theme-light {
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+  --title-color: #353430;
+  --secondary-title-color: #353430;
+  --big-title:#FFC2E6;
+  --shadow-big-title: #FF8DCB;
+  --background-title: #FF8DCB;
+  --text-color: #353430;
+  --action-display-lamp: none;
+  --opacity-outline: #32312D66;
+
 }
 
-.page.theme_light .recording {
-	display: none;
+.theme-light .page {
+  /* Вам также нужно будет написать ряд подобных селекторов */
+  --header-background: url(../images/cover-image-light.png);
+  --theme-color: #fff1f7;
 }
 
 @media (prefers-color-scheme: light) {
-	:root {
-		--background-color: var(--color-pink-seventh, #fff1f7);
-		--background-image: url('../images/cover-image-light.png');
-		--title-color: var(--color-pink-sixth, #ffc2e6);
-		--header-text-color: var(--color-grey, #353430);
-		--decorated-color: var(--color-grey, #353430);
-		--decorated-color-40: var(--color-grey-40, #35343040);
-		--section-title-color: var(--color-grey, #353430);
-		--article-title-color: var(--color-grey, #353430);
-		--accent-color: var(--color-pink-fifth, #ff8dcb);
-		--text-color: var(--color-grey, #f1b2ce);
-		--hover-color: var(--color-pink-fourth, #353430);
-		--focus-color: var(--color-pink-fourth, #353430);
-		--recording-display: none;
-	}
-
-	.recording {
-		display: none;
-	}
-}
+  :root {
+    --title-color: #353430;
+    --secondary-title-color: #353430;
+    --big-title:#FFC2E6;
+    --shadow-big-title: #FF8DCB;
+    --background-title: #FF8DCB;
+    --text-color: #353430;
+    --action-display-lamp: none;
+    --opacity-outline: #32312D66;
+    --header-background: url(../images/cover-image-light.png);
+    --theme-color: #fff1f7;
+  }
+} 
