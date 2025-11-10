@@ -1,1 +1,1 @@
-https://github.com/SofiaL/slozhno-sosredotochitsya-did
+https://github.com/SofiaL-ui2/slozhno-sosredotochitsya-did
