@@ -1,1 +1,1 @@
-Сделала проект "Сложно сосредоточиться", добавила разные стили на темную и светлую тему, написала html
+https://github.com/SofiaL/slozhno-sosredotochitsya-ad
